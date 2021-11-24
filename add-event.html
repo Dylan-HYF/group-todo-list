@@ -4,22 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Event Rough</title>
+    <title>Add New Task</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="select-persons.php">Dashboard</a></li>
+                <li><a href="logout.php">logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- NOTES: Feel free to get rid of the header/footer, and change PHP action page. I added <br>s, but please get rid them, when implementing CSS. -->
 
-    <title> Add an Event</title>
-    <section>
-    <h1>Hello, is this working?</h1>
-    <h2>New Event</h2>
-    <h3>Date</h3>
-    <p>Testinggggg</p>
-    <p>SADGE</p>
-    <p>I'm trying to use VSC TO PUSHHHHHHHHHH</p>
-    <p>VSC Doesn't let me PUSH  </p>
-    </section>
+    <h1>Add New Task</h1>
 
-    <footer></footer>
+    <form action="process-task.php" method="POST">
+        <input type="text" name="" id="">
+        <input type="text" name="name" placeholder="Spongebob" required>
+        <input type="email" name="email" placeholder="pineapple@thesea.com" required>
+        
+        <br>
+
+        <label for="details">Details:</label>
+        <textarea name="details" id="details" cols="30" rows="10" placeholder="Do all the things!"></textarea>
+
+
+
+
+
+
+
+
+        <br>
+        <!-- NEED TO GET THE NAME OF MEMBERS FROM php
+        THE "SIZE", would likely need to be a variable too -->
+        <label for="members">Choose member(s):</label>
+        <select id="members" name="members" size="4" multiple>
+        <option value="member1">Member1</option>
+        <option value="member2">Member2</option>
+        <option value="member3">Member3</option>
+        <option value="member4">Member4</option>
+        </select>
+
+        <p>Please hold down the Ctrl (Windows) / Command (Mac) button and click to select multiple members!</p> 
+        <!-- this is a bit annoying in terms of UX but it works? -->
+
+        <input type="submit" name="submit">
+    </form>
+    
+
+    <footer>
+        Hello! Please note we use cookies to provide a better site experience! <a href="#">Click to accept cookies</a>
+    </footer>
 </body>
 </html>
