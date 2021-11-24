@@ -16,15 +16,29 @@
         </nav>
     </header>
     
-    <!-- NOTES: Feel free to get rid of the header/footer, and change PHP action page. I added <br>s, but please get rid them, when implementing CSS. -->
+    <!-- NOTES: Feel free to get rid of the header/footer, and change PHP action page. I added <br>'s, but please get rid them, when implementing CSS. -->
 
     <h1>Add New Task</h1>
 
     <form action="process-task.php" method="POST">
-        <input type="text" name="" id="">
-        <input type="text" name="name" placeholder="Spongebob" required>
-        <input type="email" name="email" placeholder="pineapple@thesea.com" required>
+        <label for="task"> Task:</label><br>
+        <input type="text" id="task" name="task" required><br>
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required> <br>
+
+        <!-- Need Logic: If All Day selected > no selection for Time/is hidden? OR Time is automatically set to: "Now" until 11:59pm or Next Day 12:00AM or 0:00 (if we're doing 24hr clock)
+        Using Checkbox b/c the user can still unselect, if they change their mind-->
+        <input type="checkbox" id="allDay" name="allDay" value="allDay">
+        <label for="allDay"> All Day</label><br>
+
+
+        <!-- How would we input Logic to not be able to select a date/time from the past? the "min" "max" attribute?-->
+        <label for="timeStart">Time From:</label><br>
+        <input type="time" id="timeStart" name="timeStart"> <br>
+        <label for="timeEnd">Time To:</label><br>
+        <input type="time" id="timeEnd" name="timeEnd"> <br>
         
+
         <br>
 
         <label for="details">Details:</label>
@@ -32,14 +46,8 @@
 
 
 
-
-
-
-
-
         <br>
-        <!-- NEED TO GET THE NAME OF MEMBERS FROM php
-        THE "SIZE", would likely need to be a variable too -->
+        <!-- Need to get names of members and "size" from selection FROM php/database, would they would need to be variables? -->
         <label for="members">Choose member(s):</label>
         <select id="members" name="members" size="4" multiple>
         <option value="member1">Member1</option>
@@ -51,7 +59,10 @@
         <p>Please hold down the Ctrl (Windows) / Command (Mac) button and click to select multiple members!</p> 
         <!-- this is a bit annoying in terms of UX but it works? -->
 
+
         <input type="submit" name="submit">
+        <input type="reset"> 
+        <!-- reset button -->
     </form>
     
 
