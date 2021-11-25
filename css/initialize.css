@@ -468,11 +468,15 @@ li {
   list-style: none;
 }
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 h1 {
   margin: 0;
+}
+:root {
+  --main-bg: #423F6A;
+  --light-bg: #9892C7;
 }
 /* ==========================================================================
    Print styles
