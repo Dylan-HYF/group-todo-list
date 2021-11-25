@@ -1,0 +1,14 @@
+section {
+    display: flex;
+    background-color: white;
+}
+
+/* input[type="submit"]{
+    background: #9892C7;
+    color:white;
+} */
+
+button[type="submit"]{
+    background: #9892C7;
+    color:white;
+}
