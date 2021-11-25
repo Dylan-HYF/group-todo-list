@@ -14,10 +14,12 @@
  *    without disabling user zoom
  * 3. Configurable defaults
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 html {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: 'Roboto', sans-serif;
   /* 1 */
   line-height: 1.4;
   /* 3 */
@@ -459,6 +461,19 @@ textarea {
 /*
  * Block elements
  */
+ul {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
 /* ==========================================================================
    Print styles
    ========================================================================== */
