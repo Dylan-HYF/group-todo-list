@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,26 +16,26 @@
     <main class="bg">
         <header>
             <nav>
-            <img src="images/logo.png" alt="logo" id="logo">
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Groups</a></li>
-            </ul>
-            <div class="username">
-                <span>Hi username!</span>
-                <div class="avatar">R</div>
-            </div>
+                <img src="images/logo.png" alt="logo" id="logo">
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="group.html">Groups</a></li>
+                </ul>
+                <div class="username">
+                    <span>Hi username!</span>
+                    <div class="avatar">R</div>
+                </div>
             </nav>
         </header>
-        
+
         <!-- NOTES: Feel free to change PHP action page. I added <br>'s, but please get rid them if it messes with CSS. -->
 
-        
+
 
         <section id="formSection">
             <h1>Add a New Task</h1>
             <hr>
-            
+
             <form action="process-task.php" method="POST">
                 <label for="title">Title</label><br>
                 <input type="text" id="title" name="title" required><br>
@@ -52,12 +53,13 @@
                 <input type="time" id="timeStart" name="timeStart"> <br>
                 <label for="timeEnd">Time To:</label><br>
                 <input type="time" id="timeEnd" name="timeEnd"> <br>
-                
+
 
                 <br>
 
                 <label for="description">Description</label><br>
-                <textarea name="description" id="description" cols="30" rows="10" placeholder="Do all the things!"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10"
+                    placeholder="Do all the things!"></textarea>
 
 
 
@@ -65,13 +67,14 @@
                 <!-- Need to get names of members and "size" from selection FROM php/database, would they would need to be variables? -->
                 <label for="members">Add members</label><br>
                 <select id="members" name="members" size="4" multiple>
-                <option value="member1">Member1</option>
-                <option value="member2">Member2</option>
-                <option value="member3">Member3</option>
-                <option value="member4">Member4</option>
+                    <option value="member1">Member1</option>
+                    <option value="member2">Member2</option>
+                    <option value="member3">Member3</option>
+                    <option value="member4">Member4</option>
                 </select>
 
-                <p id="hint">Please hold down the Ctrl (Windows) / Command (Mac) button and click to select multiple members!</p> 
+                <p id="hint">Please hold down the Ctrl (Windows) / Command (Mac) button and click to select multiple
+                    members!</p>
                 <!-- this is a bit annoying in terms of UX but it works? -->
 
 
@@ -81,11 +84,12 @@
                 <!-- reset button -->
             </form>
         </section>
-        
+
 
         <!-- <footer>
             Hello! Please note we use cookies to provide a better site experience! <a href="#">Click to accept cookies</a>
         </footer> -->
     </main>
 </body>
+
 </html>
