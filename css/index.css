@@ -43,7 +43,7 @@ nav ul li a:hover {
     align-items: center;
     color: white;
 }
-.username .avatar {
+.avatar {
     margin: 0 15px;
     height: 45px;
     width: 45px;
@@ -53,6 +53,8 @@ nav ul li a:hover {
     line-height: 45px;
     font-size: 22px;
     font-weight: 500;
+    color: white;
+
     /* padding: 5px; */
 }
 .container {
@@ -133,6 +135,7 @@ aside a {
     border-radius: 10px;
     box-shadow:0px 6px 5px rgba(0, 0, 0,.2);
     padding: 20px;
+    overflow: auto;
 }
 .title {
     display: flex;
@@ -141,6 +144,7 @@ aside a {
 }
 .buttons a {
     color: var(--light-bg);
+    margin-left: 20px;
 }
 #detail h3 {
     font-weight: 500;
@@ -148,7 +152,19 @@ aside a {
 }
 #detail article {
     margin-bottom: 50px;
+    font-weight: 300;
 }
 #detail .members-title {
     margin-bottom: 10px;
+}
+.members {
+    display: flex;
+}
+.members-container {
+    /* text-align: center; */
+    display: flex;
+    /* vertical-align: middle; */
+    align-items: center;
+    font-weight: 300;
+    margin-right: 20px;
 }
