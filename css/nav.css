@@ -37,6 +37,9 @@ nav ul li a:hover {
     align-items: center;
     color: white;
 }
+.username a {
+    color: white;
+}
 .username .avatar {
     margin: 0 15px;
     height: 45px;
@@ -47,5 +50,6 @@ nav ul li a:hover {
     line-height: 45px;
     font-size: 22px;
     font-weight: 500;
+    /* cursor: pointer; */
     /* padding: 5px; */
 }
