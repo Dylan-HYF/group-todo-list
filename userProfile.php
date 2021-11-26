@@ -50,7 +50,7 @@
             <li>Group name
         </ul><br>
         <br>
-        <a href="#">Edit Profile</a>
+        <a href="#" style="color: #423F6A">Edit Profile</a>
 
     </section>
 </body>
