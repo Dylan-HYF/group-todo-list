@@ -19,12 +19,12 @@
         <nav>
             <img src="images/logo.png" alt="logo" id="logo">
             <ul>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="login.php">Log In</a></li>
+                <li><a href="sign-up.php">Sign Up</a></li>
             </ul>
             <div class="username">
                 <span>Hi username!</span>
-                <a href="userProfile.html">
+                <a href="userProfile.php">
                     <div class="avatar">R</div>
                 </a>
             </div>
@@ -44,13 +44,17 @@
             <input type="text" name="password" required><br>
             <label>Pick your profile colour</label><br>
             <input type="color" name="color" value="#d1cee7" required><br>
-            <label>Join a Group?</label>
-            <input type="checkbox" name="groupy"><br>
+            <label>Join a Group</label>
+            <input type="radio" name="groupSet" value="1" required><br>
+            <label>Create a Group</label>
+            <input type="radio" name="groupSet" value="2"><br>
+            <label>Not now</label>
+            <input type="radio" name="groupSet" value="3"><br>
             <!--if box is checked, search bar shows up-->
-            <input type="search" name="q"><br>
+            <!-- <input type="search" name="q"><br> -->
             <input type="submit" value="Sign Up">
         </form>
-        <p>Already have an account? <a href="login.html" style="color: #9892C7">Log in</a></p>
+        <p>Already have an account? <a href="login.php" style="color: #9892C7">Log in</a></p>
     </div>
 
 </body>

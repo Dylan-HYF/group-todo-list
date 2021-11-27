@@ -20,21 +20,11 @@
         <a href = "userProfile.php"><img src="user.png" alt="user"></a>
 
     </nav> -->
-    <header>
-        <nav>
-            <img src="images/logo.png" alt="logo" id="logo">
-            <ul>
-                <li><a href="index.html">Dashboard</a></li>
-                <li><a href="group.html">Groups</a></li>
-            </ul>
-            <div class="username">
-                <span>Hi username!</span>
-                <a href="userProfile.html">
-                    <div class="avatar">R</div>
-                </a>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include("includes/session-check.php");
+    include("includes/nav.php");
+    ?>
+
     <section style="padding: 20px">
         <h1>Username</h1>
         <hr>
