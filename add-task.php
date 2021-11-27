@@ -14,21 +14,10 @@
 
 <body>
     <main class="bg">
-        <header>
-            <nav>
-                <img src="images/logo.png" alt="logo" id="logo">
-                <ul>
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="group.html">Groups</a></li>
-                </ul>
-                <div class="username">
-                    <span>Hi username!</span>
-                    <a href="userProfile.html">
-                        <div class="avatar">R</div>
-                    </a>
-                </div>
-            </nav>
-        </header>
+        <?php
+        include("includes/session-check.php");
+        include("includes/nav.php");
+        ?>
 
         <!-- NOTES: Feel free to change PHP action page. I added <br>'s, but please get rid them if it messes with CSS. -->
 
@@ -60,8 +49,7 @@
                 <br>
 
                 <label for="description">Description</label><br>
-                <textarea name="description" id="description" cols="30" rows="10"
-                    placeholder="Do all the things!"></textarea>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Do all the things!"></textarea>
 
 
 

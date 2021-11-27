@@ -19,12 +19,12 @@
         <nav>
             <img src="images/logo.png" alt="logo" id="logo">
             <ul>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="sign-up.html">Sign Up</a></li>
+                <li><a href="login.php">Log In</a></li>
+                <li><a href="sign-up.php">Sign Up</a></li>
             </ul>
             <div class="username">
                 <span>Hi username!</span>
-                <a href="userProfile.html">
+                <a href="userProfile.php">
                     <div class="avatar">R</div>
                 </a>
             </div>
@@ -41,7 +41,7 @@
             <input type="password" name="password" /><br>
             <input type="submit" value="Log In" />
         </form>
-        <p>Don't have an account? <a href="sign-up.html" style="color: #9892C7">Sign up</a></p>
+        <p>Don't have an account? <a href="sign-up.php" style="color: #9892C7">Sign up</a></p>
     </div>
 
 </body>
