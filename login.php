@@ -8,28 +8,22 @@
 
     <link rel="stylesheet" href="css/initialize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
 
 </head>
 
 <body>
+    <!--nav bar-->
 
-    <header>
-        <!--nav bar-->
+    <!-- <header>
         <nav>
             <img src="images/logo.png" alt="logo" id="logo">
             <ul>
                 <li><a href="login.php">Log In</a></li>
                 <li><a href="sign-up.php">Sign Up</a></li>
             </ul>
-            <div class="username">
-                <span>Hi username!</span>
-                <a href="userProfile.php">
-                    <div class="avatar">R</div>
-                </a>
-            </div>
         </nav>
-    </header>
+    </header> -->
 
     <div id="login">
         <!-- log in form -->

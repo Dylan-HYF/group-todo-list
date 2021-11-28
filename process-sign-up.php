@@ -5,8 +5,6 @@
 $username = $_POST['username'];
 $password = $_POST['password'];
 $color = $_POST['color'];
-$color = $_POST['color'];
-$color = $_POST['color'];
 $groupSet = $_POST['groupSet'];
 // insert data into db
 // connect 

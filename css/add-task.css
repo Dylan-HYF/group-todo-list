@@ -1,5 +1,7 @@
 .bg{
     background-image: linear-gradient(#ffffff, #D0cee7);
+    width: 100%;
+    height: 100%;
 }
 
 section {
@@ -8,10 +10,11 @@ section {
     background-color: white;
     width: 50%;
     padding:3em 3em;
+    padding-top: 5em;
     margin: auto;
-    margin-top: 3em;
+    /* margin-top: 3em; */
     box-shadow:0px 6px 5px rgba(0, 0, 0,.2);  
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 hr {
