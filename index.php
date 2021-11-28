@@ -8,6 +8,7 @@
   <title>Palendar</title>
   <link rel="stylesheet" href="css/initialize.css" />
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     ?>
     <section class="container">
       <aside>
-        <h1>
+        <h1 id="today">
           January 1, 2022
         </h1>
         <section>
@@ -111,6 +112,7 @@
       </section>
     </section>
   </main>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
