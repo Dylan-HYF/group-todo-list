@@ -106,7 +106,9 @@
                     $group->execute();
                     $name = $group->fetch();
                     ?>
-                    <h2><?= $name["groupName"] ?></h2>
+                    <h2>Group name: <?= $name["groupName"] ?></h2>
+                    <h2>Group id: <?= $name["groupId"] ?></h2>
+                    <h2>Group members</h2>
                     <?php
                     $users = $pdo->prepare("SELECT * FROM `user-group` WHERE `user-group`.`groupId` = $groupId;");
                     $users->execute();
