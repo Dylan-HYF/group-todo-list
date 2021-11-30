@@ -31,26 +31,28 @@
             <img src="images/logo-colour.png" id="clogo" /> <br>
             Sign up below to get started!
         </p>
-        <form method="POST" action="process-sign-up.php">
+        <form method="POST" action="process-sign-up.php" name="signUp">
             <label>Username</label><br>
             <input type="text" name="username" required><br>
             <label>Password</label><br>
             <input type="text" name="password" required><br>
             <label>Pick your profile colour</label><br>
             <input type="color" name="color" value="#d1cee7" required><br>
-            <label>Join a Group</label>
+            <!-- <label>Join a Group</label>
             <input type="radio" name="groupSet" value="1" required><br>
             <label>Create a Group</label>
-            <input type="radio" name="groupSet" value="2"><br>
+            <input type="radio" name="groupSet" value="2">
+            <input type="text" placeholder="group name" name="groupName" style="display:none">
+            <br>
             <label>Not now</label>
-            <input type="radio" name="groupSet" value="3"><br>
+            <input type="radio" name="groupSet" value="3"><br> -->
             <!--if box is checked, search bar shows up-->
             <!-- <input type="search" name="q"><br> -->
             <input type="submit" value="Sign Up">
         </form>
         <p>Already have an account? <a href="login.php" style="color: #9892C7">Log in</a></p>
     </div>
-
+    <script src="js/signUp.js"></script>
 </body>
 
 </html>
