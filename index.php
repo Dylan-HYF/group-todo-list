@@ -1,3 +1,7 @@
+<?php
+include("includes/session-check.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,6 @@
 <body>
   <main class="bg">
     <?php
-    include("includes/session-check.php");
     include("includes/nav.php");
     ?>
     <section class="container">

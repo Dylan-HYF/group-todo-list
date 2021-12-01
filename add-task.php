@@ -1,3 +1,6 @@
+<?php
+include("includes/session-check.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +18,7 @@
 <body>
     <main class="bg">
         <?php
-        include("includes/session-check.php");
+
         if (!isset($_SESSION["groupId"])) {
         ?>
             <p>Create or Join a group!</p>
