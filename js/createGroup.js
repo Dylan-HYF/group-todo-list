@@ -59,15 +59,41 @@
 
 const groupSet = document.querySelectorAll('input[name="groupSet"]')
 const createGroup = document.querySelector('#createGroup')
-
+const joinGroup = document.querySelector('#joinGroup')
 for (let i of groupSet) {
   i.addEventListener('change', e => {
     if (i.value == 1) {
       // console.log('1')
       createGroup.style.display = 'block'
+      joinGroup.style.display = 'none'
     } else {
       createGroup.style.display = 'none'
-
+      joinGroup.style.display = 'block'
     }
   })
 }
+const search = document.querySelector('#search')
+const mySearch = document.querySelector('#mySearch')
+const output = document.querySelector('#output')
+search.addEventListener('click', e => {
+  if (mySearch.value) {
+    let xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function (e) {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        console.log(xhr.responseText);// modify or populate html elements based on response.
+        //DOM Manipulation
+        const res = JSON.parse(xhr.responseText)
+        for (let i of res) {
+          const div = document.createElement('div')
+          div.innerHTML = `<span>${i.groupName}</span>
+                           <a href="join-group.php?groupId=${i.groupId}" >+ join</a>`
+          output.appendChild(div)
+        }
+      }
+    };
+
+    xhr.open("GET", `search-group.php?groupId=${mySearch.value}`, true); //true means it is asynchronous // Send variables through the url
+    xhr.send();
+  }
+})

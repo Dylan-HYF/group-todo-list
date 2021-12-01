@@ -1,6 +1,7 @@
 <?php
 //process-search.php
 //receive search Term, find in database table, display results
+session_start();
 
 $groupName = $_POST["groupName"];
 $userId = $_POST["userId"];
@@ -18,6 +19,7 @@ if ($stmt->execute()) {
   $groupId = $pdo->lastInsertId();
   $join = $pdo->prepare("INSERT INTO `user-group` (`userId`, `groupId`, `username`) VALUES ($userId, $groupId, '$username');");
   if ($join->execute()) {
+    $_SESSION["groupId"] = $groupId;
     header('Location: group.php');
   } else {
 ?>

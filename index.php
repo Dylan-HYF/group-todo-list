@@ -24,44 +24,54 @@
         </h1>
         <section>
           <div class="times">
+            <?php
+            $userId = $_SESSION["userId"];
+            include("includes/db-connect.php");
+            $task = $pdo->prepare("SELECT * FROM `tasks` WHERE `tasks`.`userId` = $userId");
+            $task->execute();
+            // $row = $task->fetchAll();
+            $results = $task->fetchAll(PDO::FETCH_ASSOC);
+            $json = json_encode($results);
+            ?>
+            <p style="display: none" id="taskData"><?= $json ?></p>
             <div class="time">
-              <span>09:00</span>
-              <div class="line"></div>
-            </div>
-            <div class="time">
-              <span>10:00</span>
-              <div class="line"></div>
-            </div>
-            <div class="time todo">
-              <span>11:00</span>
-              <div class="line"></div>
-            </div>
-            <div class="time todo">
-              <span>12:00</span>
+              <span>09</span>:00
               <div class="line"></div>
             </div>
             <div class="time">
-              <span>13:00</span>
-              <div class="line"></div>
-            </div>
-            <div class="time todo-2">
-              <span>14:00</span>
+              <span>10</span>:00
               <div class="line"></div>
             </div>
             <div class="time">
-              <span>15:00</span>
+              <span>11</span>:00
               <div class="line"></div>
             </div>
             <div class="time">
-              <span>16:00</span>
+              <span>12</span>:00
               <div class="line"></div>
             </div>
             <div class="time">
-              <span>17:00</span>
+              <span>13</span>:00
               <div class="line"></div>
             </div>
             <div class="time">
-              <span>18:00</span>
+              <span>14</span>:00
+              <div class="line"></div>
+            </div>
+            <div class="time">
+              <span>15</span>:00
+              <div class="line"></div>
+            </div>
+            <div class="time">
+              <span>16</span>:00
+              <div class="line"></div>
+            </div>
+            <div class="time">
+              <span>17</span>:00
+              <div class="line"></div>
+            </div>
+            <div class="time">
+              <span>18</span>:00
               <div class="line"></div>
             </div>
 
@@ -70,12 +80,13 @@
         </section>
 
       </aside>
-      <section id="detail">
+      <section id="detail" style="display: none">
         <div class="title">
           <h2>Group project</h2>
+
           <div class="buttons">
-            <a href="#">edit</a>
-            <a href="#">delete</a>
+            <a href="javascript:;" id="edit">edit</a>
+            <a href="javascript:;" id="delete">delete</a>
           </div>
         </div>
         <hr>
@@ -92,7 +103,7 @@
         </article>
         <h3 class="members-title">Members</h3>
         <div class="members">
-          <div class="members-container">
+          <!-- <div class="members-container">
             <div class="avatar">R</div>
             <span>Reynold</span>
           </div>
@@ -107,7 +118,21 @@
           <div class="members-container">
             <div class="avatar">M</div>
             <span>Mimi</span>
-          </div>
+          </div> -->
+          <?php
+          $groupId = $_SESSION["groupId"];
+          $users = $pdo->prepare("SELECT * FROM `user-group` WHERE `user-group`.`groupId` = $groupId;");
+          $users->execute();
+          while ($user = $users->fetch()) {
+          ?>
+            <div class="members-container">
+              <div class="avatar"><?= $user["username"][0] ?></div>
+              <span><?= $user["username"] ?></span>
+            </div>
+          <?php
+          }
+          ?>
+
         </div>
       </section>
     </section>

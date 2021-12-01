@@ -25,7 +25,7 @@
     <div class="dropdown-content">
       <div class="arrow-up"></div>
       <ul class="option">
-        <li><a href="userProfile.php">Profile</a></li>
+        <!-- <li><a href="userProfile.php">Profile</a></li> -->
         <li><a href="logout.php">Log out</a></li>
       </ul>
     </div>

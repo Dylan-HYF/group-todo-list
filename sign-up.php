@@ -52,7 +52,7 @@
         </form>
         <p>Already have an account? <a href="login.php" style="color: #9892C7">Log in</a></p>
     </div>
-    <script src="js/signUp.js"></script>
+    <!-- <script src="js/signUp.js"></script> -->
 </body>
 
 </html>

@@ -2,10 +2,9 @@
 //process-search.php
 //receive search Term, find in database table, display results
 
-$q = $_GET["q"];
+$groupId = $_GET["groupId"];
 include("includes/db-connect.php");
-$stmt = $pdo->prepare("SELECT * FROM `user`
-	WHERE `username` LIKE '%$q%';");
+$stmt = $pdo->prepare("SELECT * FROM `groups` WHERE `groups`.`groupId` = $groupId");
 //execute
 $stmt->execute();
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);

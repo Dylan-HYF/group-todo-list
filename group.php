@@ -36,7 +36,7 @@
                     <label>Create a group</label>
                     <input type="radio" name="groupSet" value="1">
                     <label>Join a group</label>
-                    <input type="radio" name="groupSet" value="2">
+                    <input type="radio" name="groupSet" value="2" checked>
                     <form action="create-group.php" method="post" id="createGroup" style="display: none">
                         <label>
                             Group name
@@ -45,6 +45,19 @@
                         <input type="hidden" name="username" value="<?= $_SESSION["username"] ?>">
                         <input type="text" name="groupName" placeholder="Group name" required>
                         <input type="submit" value="create">
+                    </form>
+                    <!-- action="join-group.php" method="post"  -->
+                    <form id="joinGroup">
+                        <label>
+                            Group id
+                        </label>
+                        <input type="search" id="mySearch" name="groupId" required>
+                        <button type="button" id="search">Search</button>
+                        <div id="output">
+                            <!-- <input type="hidden" name="userId" value="<?= $_SESSION["userId"] ?>">
+                        <input type="hidden" name="username" value="<?= $_SESSION["username"] ?>">
+                        <input type="text" name="groupName" placeholder="Group name" required>
+                        <input type="submit" value="create"> -->
                     </form>
                 </section>
                 <!-- <section class="create-group">
@@ -96,6 +109,7 @@
                 <script src="js/createGroup.js"></script>
             <?php
             } else {
+                $_SESSION["groupId"] = $row["groupId"];
             ?>
                 <section class="current">
                     <h1>Current Goup</h1>
