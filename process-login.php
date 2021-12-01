@@ -19,7 +19,7 @@ if ($row = $stmt->fetch()) {
   $_SESSION["userId"] = $row["userId"];
   $_SESSION["username"] = $row["username"];
   $_SESSION["color"] = $row["color"];
-  header("Location: index.php");
+  header("Location: group.php");
   // echo ($row["username"]);
 } else {
 ?>

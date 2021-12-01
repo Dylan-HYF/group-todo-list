@@ -29,8 +29,9 @@ include("includes/session-check.php");
           <div class="times">
             <?php
             $userId = $_SESSION["userId"];
+            $groupId = $_SESSION["groupId"];
             include("includes/db-connect.php");
-            $task = $pdo->prepare("SELECT * FROM `tasks` WHERE `tasks`.`userId` = $userId");
+            $task = $pdo->prepare("SELECT * FROM `tasks` WHERE `tasks`.`groupId` = $groupId");
             $task->execute();
             // $row = $task->fetchAll();
             $results = $task->fetchAll(PDO::FETCH_ASSOC);

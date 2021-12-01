@@ -3,7 +3,7 @@
     <img src="images/logo.png" alt="logo" id="logo">
     <ul>
       <li><a href="index.php">Dashboard</a></li>
-      <li><a href="group.php">Groups</a></li>
+      <li><a href="group.php">Group</a></li>
     </ul>
     <div class="username">
       <?php

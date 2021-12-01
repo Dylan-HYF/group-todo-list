@@ -132,7 +132,7 @@ include("includes/session-check.php");
                     while ($user = $users->fetch()) {
                     ?>
                         <div class="members-container">
-                            <div class="avatar"><?= $user["username"][0] ?></div>
+                            <div class="avatar" style="background-color: <?= $_SESSION["color"] ?>"><?= $user["username"][0] ?></div>
                             <span><?= $user["username"] ?></span>
                         </div>
                     <?php
