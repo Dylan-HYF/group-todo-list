@@ -1,3 +1,7 @@
+<?php
+include("includes/session-check.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +25,6 @@
 
     </nav> -->
     <?php
-    include("includes/session-check.php");
     include("includes/nav.php");
     ?>
 
