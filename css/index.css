@@ -115,10 +115,23 @@ aside section {
 .todo {
     background: var(--main-bg);
     color: white;
+    cursor: pointer;
+    /* opacity: .3; */
 }
-.todo-2 {
+.todo2 {
     background: var(--light-bg);
     color: white;
+    cursor: pointer;
+
+}
+#editButton {
+    display: block;
+    background: #9892C7;
+    color:white;
+    font-size: 2em;
+    width:200px;
+    height:50px;
+    border: transparent;
 }
 aside section .line {
     margin-left: 20px;
