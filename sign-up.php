@@ -33,11 +33,11 @@
                 <span style="font-weight: 300;">Sign up below to get started!</span>
             </p>
             <form method="POST" action="process-sign-up.php" name="signUp">
-                <div style="text-align: left; transform: translate(70px, 0px);"><label>Username</label></div>
+                <div style="text-align: left; transform: translate(72px, 0px);"><label>Username</label></div>
                 <input type="text" name="username" required><br>
-                <div style="text-align: left; transform: translate(70px, 0px);"><label>Password</label></div>
+                <div style="text-align: left; transform: translate(72px, 0px);"><label>Password</label></div>
                 <input type="text" name="password" required><br>
-                <div style="text-align: left; transform: translate(70px, 0px);"><label>Pick your profile colour</label></div>
+                <div style="text-align: left; transform: translate(72px, 0px);"><label>Pick your profile colour</label></div>
                 <input type="color" name="color" value="#d1cee7" required><br>
                 <!-- <label>Join a Group</label>
                 <input type="radio" name="groupSet" value="1" required><br>

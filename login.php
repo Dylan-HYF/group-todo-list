@@ -30,9 +30,9 @@
             <!-- log in form -->
             <img src="images/logo-colour.png" id="clogo" /> <br>
             <form action="process-login.php" method="POST">
-                <div style="text-align: left; transform: translate(70px, 0px);"><label> Username </label></div>
+                <div style="text-align: left; transform: translate(72px, 0px);"><label> Username </label></div>
                 <input type="text" name="username" /><br>
-                <div style="text-align: left; transform: translate(70px, 0px);"><label> Password </label></div>
+                <div style="text-align: left; transform: translate(72px, 0px);"><label> Password </label></div>
                 <input type="password" name="password" /><br>
                 <input type="submit" value="Log In" />
             </form>
