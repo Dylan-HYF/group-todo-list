@@ -12,6 +12,7 @@ include("includes/session-check.php");
     <link rel="stylesheet" href="css/nav.css">
     <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="css/add-task.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>Add New Task</title>
 </head>
 

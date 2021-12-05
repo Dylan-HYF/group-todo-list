@@ -66,3 +66,64 @@ textarea {
 input[type="text"] {
     width:70%;
 }
+
+/* ANIMATION CSS */
+
+@keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+#formSection {
+animation: drop-in 1000ms;
+}
+
+button[type="submit"]{
+animation: drop-in 2000ms;
+
+}
+
+@keyframes grow-and-shrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* button[type="submit"] {
+animation: grow-and-shrink 4000ms;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+} */
+
+button[type="submit"] {
+border: 0;
+/* background: #0087cc; */
+border-radius: 4px;
+box-shadow: 0 5px 0 #59567c;
+color: #fff;
+cursor: pointer;
+/* font: inherit; */
+margin: 0;
+outline: 0;
+/* padding: 12px 20px; */
+padding-bottom: .5rem;
+transition: all .1s linear;
+}
+button:active {
+box-shadow: 0 2px 0 #59567c;
+transform: translateY(3px);
+}
