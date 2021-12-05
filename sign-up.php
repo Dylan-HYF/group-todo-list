@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/initialize.css">
     <link rel="stylesheet" href="css/login-signup.css">
     <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
 
 </head>
 

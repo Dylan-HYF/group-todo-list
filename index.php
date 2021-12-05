@@ -13,6 +13,7 @@ include("includes/session-check.php");
   <link rel="stylesheet" href="css/initialize.css" />
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/nav.css">
+  <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
 </head>
 
 <body>

@@ -11,6 +11,7 @@ include("includes/session-check.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/initialize.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
     <title>User Profile</title>
 </head>
 
