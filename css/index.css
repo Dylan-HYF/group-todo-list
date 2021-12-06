@@ -133,6 +133,9 @@ aside section {
     height:50px;
     border: transparent;
 }
+#editButton:focus {
+    background: var(--main-bg);
+}
 aside section .line {
     margin-left: 20px;
     width: 80%;
@@ -145,8 +148,12 @@ aside a {
     /* position: absolute;
     bottom: 20px; */
     color: #a6a0d4;
+
     /* display: inline; */
     /* margin-top: auto; */
+}
+aside a:focus {
+    color: var(--main-bg);
 }
 #detail {
     width: 60%;
@@ -166,6 +173,9 @@ aside a {
 .buttons a {
     color: var(--light-bg);
     margin-left: 20px;
+}
+.buttons a:focus {
+    color: var(--main-bg);
 }
 #detail h3 {
     font-weight: 500;
