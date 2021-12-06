@@ -9,11 +9,17 @@ include("includes/session-check.php");
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Palendar</title>
+  <meta name="description" content="Add Task Page Palendar">
+  <meta name="keywords" content="Palendar,CalendarApp,AddTask,GroupCalendarApp">
+  <!-- <link rel="author" content="Palendar" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/index.php" /> -->
+  <link rel="author" content="Palendar" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/login.php" />
+  <!-- <link rel="canonical" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/index.php" /> -->
+  <link rel="canonical" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/login.php" />
   <link rel="stylesheet" href="css/initialize.css" />
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
+  <title>Palendar</title>
 </head>
 
 <body>

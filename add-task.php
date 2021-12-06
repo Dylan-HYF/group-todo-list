@@ -8,10 +8,6 @@ include("includes/session-check.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Add Task Page Palendar">
-    <meta name="keywords" content="Palendar,CalendarApp,AddTask,GroupCalendarApp">
-    <link rel="author" content="Palendar" href="http://www.palendar.com/" />
-    <link rel="canonical" href="http://www.palendar.com/" />
     <link rel="stylesheet" href="css/initialize.css" />
     <link rel="stylesheet" href="css/nav.css">
     <!-- <link rel="stylesheet" href="css/index.css"> -->
