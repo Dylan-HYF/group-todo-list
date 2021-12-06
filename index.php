@@ -12,7 +12,7 @@ include("includes/session-check.php");
   <meta name="description" content="Home Page Palendar">
   <meta name="keywords" content="Palendar,CalendarApp,AddTask,GroupCalendarApp">
   <!-- Twitter Card data -->
-  <meta name="twitter:card" value="palendar">
+  <meta name="twitter:card" value="summary">
 
   <!-- Open Graph data -->
   <meta property="og:title" content="palendar" />
