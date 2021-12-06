@@ -96,7 +96,7 @@ animation: drop-in 2000ms;
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(1.02);
     }
     100% {
       transform: scale(1);
@@ -126,4 +126,20 @@ transition: all .1s linear;
 button:active {
 box-shadow: 0 2px 0 #59567c;
 transform: translateY(3px);
+}
+
+/* MORE transitions */
+
+input:hover , select:hover , textarea:hover    {
+    background: #d0cee7;
+    animation: grow-and-shrink 1000ms;
+    animation-iteration-count: 1; 
+    /* infinite */
+    animation-timing-function: ease-in-out;
+  }
+
+button[type="submit"]:hover {
+    animation: grow-and-shrink 1000ms;
+    animation-iteration-count: 1; 
+    animation-timing-function: ease-in-out;
 }
