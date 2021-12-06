@@ -5,11 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Log In</title>
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
 
+    <!-- Open Graph data -->
+    <meta property="og:title" content="palendar" />
+    <meta property="og:type" content="app" />
+    <meta property="og:url" content="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/" />
+    <meta property="og:image" content="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/images/palendar-social.jpg" />
+    <meta property="og:description" content="A group todo list" />
     <link rel="stylesheet" href="css/initialize.css">
     <link rel="stylesheet" href="css/login-signup.css">
     <!-- <link rel="stylesheet" href="css/nav.css"> -->
-    <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png" />
 
 </head>
 
