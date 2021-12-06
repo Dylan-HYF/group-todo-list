@@ -67,7 +67,7 @@ input[type="text"] {
     width:70%;
 }
 
-/* ANIMATION CSS */
+/* ANIMATION CSS ///////////////////////////////////////*/
 
 @keyframes drop-in {
     from {
@@ -85,11 +85,13 @@ input[type="text"] {
 #formSection {
 animation: drop-in 1000ms;
 }
-
-button[type="submit"]{
-animation: drop-in 2000ms;
-
+h1{
+    animation: drop-in 1500ms;
 }
+
+/* button[type="submit"]{
+animation: drop-in 2000ms;
+} */
 
 @keyframes grow-and-shrink {
     0% {
@@ -136,6 +138,7 @@ input:hover , select:hover , textarea:hover    {
     animation-iteration-count: 1; 
     /* infinite */
     animation-timing-function: ease-in-out;
+
   }
 
 button[type="submit"]:hover {
