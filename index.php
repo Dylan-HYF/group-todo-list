@@ -9,8 +9,17 @@ include("includes/session-check.php");
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Add Task Page Palendar">
+  <meta name="description" content="Home Page Palendar">
   <meta name="keywords" content="Palendar,CalendarApp,AddTask,GroupCalendarApp">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" value="palendar">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="palendar" />
+  <meta property="og:type" content="app" />
+  <meta property="og:url" content="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/" />
+  <meta property="og:image" content="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/images/palendar-social.jpg" />
+  <meta property="og:description" content="A group todo list" />
   <!-- <link rel="author" content="Palendar" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/index.php" /> -->
   <link rel="author" content="Palendar" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/login.php" />
   <!-- <link rel="canonical" href="http://huangyou.dev.fast.sheridanc.on.ca/group-todo-list/index.php" /> -->
@@ -18,7 +27,7 @@ include("includes/session-check.php");
   <link rel="stylesheet" href="css/initialize.css" />
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png"/>
+  <link rel="shortcut icon" type="image/jpg" href="images/palender-favicon.png" />
   <title>Palendar</title>
 </head>
 
